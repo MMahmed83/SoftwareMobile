@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ball animation</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.ball{
+		 background-color: red;
+		 width:200px;
+		 height: 200px;
+		 border-radius: 100px;
+		 margin: auto 450px;
+		 animation-name:my_ball;
+		 animation-duration:0.5s;
+         animation-iteration-count:infinite;
+         animation-direction: alternate-reverse;
+
+	}
+
+	@keyframes my_ball{
+to{
+transform: translate3d(0,0,0);
+}
+from{
+transform: translate3d(0,800px,0);
+
+}
+
+	}
+</style>
+<body>
+<div class="ball"></div>
+</body>
+</html>
